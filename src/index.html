@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#005d8f" />
+    <link rel="shortcut icon" href="/icon.png" />
+
+    <title>Web Cerita</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- JS Module -->
+    <script type="module" src="/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">SPA STORY</a>
+        <button
+          id="drawer-button"
+          class="drawer-button"
+          aria-label="Toggle navigation menu"
+        >
+          ☰
+        </button>
+
+        <nav id="navigation-drawer" class="navigation-drawer" role="navigation">
+          <ul class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/favorite">Favorit</a></li>
+            <li><a href="#/login" id="login-link">Login</a></li>
+            <li>
+              <button id="logout-button" style="display: none">Logout</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content" class="main-content" tabindex="-1">
+      <section>
+        <h1>Selamat datang di dunia cerita penuh inspirasi!</h1>
+        <p>
+          Temukan dan bagikan kisah-kisah bermakna dari berbagai pengalaman.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Aplikasi Cerita by</p>
+      </div>
+    </footer>
+  </body>
+</html>

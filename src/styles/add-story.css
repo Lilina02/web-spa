@@ -1,0 +1,195 @@
+/* Halaman Tambah Cerita */
+.add-story-page .container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-story-page h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.add-story-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.add-story-page .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-story-page label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.add-story-page input[type="file"],
+.add-story-page input[type="number"],
+.add-story-page textarea,
+.add-story-page button {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-story-page input:focus,
+.add-story-page textarea:focus {
+  border-color: #ca8787;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(202, 135, 135, 0.2);
+}
+
+.add-story-page button[type="submit"] {
+  background-color: rgb(240, 108, 218);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-story-page button[type="submit"]:hover {
+  background-color: rgb(240, 108, 218);
+}
+
+.add-story-page .form-message {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.add-story-page .form-message.error {
+  color: #e74c3c;
+}
+
+.add-story-page .form-message.success {
+  color: #27ae60;
+}
+
+/* Media Query untuk Tampilan Mobile */
+@media (max-width: 640px) {
+  .add-story-page .container {
+    padding: 1rem;
+  }
+
+  .add-story-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .add-story-page label {
+    font-size: 0.9rem;
+  }
+
+  .add-story-page input,
+  .add-story-page button {
+    font-size: 0.95rem;
+  }
+
+  .add-story-page form {
+    gap: 1rem;
+  }
+}
+
+/* Aksesibilitas: Skip Link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+/* Map */
+.map-add {
+  height: 250px;
+  border: 2px solid #ccc;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+/* Popup Kamera */
+.camera-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.camera-modal.hidden {
+  display: none;
+}
+
+/* Video Pratinjau */
+#camera-preview {
+  max-width: 90vw;
+  max-height: 70vh;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+}
+
+/* Tombol Ambil Foto */
+.capture-button {
+  margin-top: 1rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  #ca87bb;
+  border: 5px solid #444;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.capture-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(202, 135, 135, 0.5);
+}
+
+/* Tombol Tutup */
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #c93333;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}
