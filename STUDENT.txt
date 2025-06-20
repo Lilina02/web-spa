@@ -1,5 +1,5 @@
-APP_URL=https://dynamic-gumption-4d636b.netlify.app/
+APP_URL=https:https://gbh-bxr7.vercel.app/
 MAP_SERVICE_API_KEY=<api_key_anda>
 
 
-URL WEBSITE PROJECT:https://dynamic-gumption-4d636b.netlify.app/
+URL WEBSITE PROJECT:https://gbh-bxr7.vercel.app/
