@@ -46,7 +46,7 @@
 
 .add-story-page input:focus,
 .add-story-page textarea:focus {
-  border-color: #ca8787;
+  border-color: rgb(240, 108, 218);
   outline: none;
   box-shadow: 0 0 0 2px rgba(202, 135, 135, 0.2);
 }
@@ -172,7 +172,7 @@
 
 .capture-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(202, 135, 135, 0.5);
+  box-shadow: 0 0 10px rgba(247, 112, 213, 0.5);
 }
 
 /* Tombol Tutup */
